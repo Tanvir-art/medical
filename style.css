@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* nvabar start*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(63, 55, 55);
+    transition: color 0.3s;
+    font-size: 23px;
+    margin-right: 10px;
+}
+
+.nav-links a:hover {
+    color: #2066b0
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(25, 24, 24);
+    margin: 3px 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+
+/* navbar end */
+
+
+.hero{
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.positioning{
+    position: relative;
+    top: -100px;
+    margin: 0px 150px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tablinks {
+    background-color: #086cd6;
+    margin-right: 15px;
+    border: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Style the active tab */
+.active {
+    display: block;
+}
+
+.need{
+    background-image:linear-gradient(rgba(0, 87, 248, 0.7), rgba(0, 87, 248, 0.7)), url('/images/care.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 450px;
+    position: relative;
+   overflow: hidden;
+}
+
+.neddButton{
+    border: 2px solid #ffffff;
+    padding:20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.breadcrumb{
+    background-image:linear-gradient(rgba(0, 87, 248, 0.7), rgba(0, 87, 248, 0.7)), url('/images/contact.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 250px;
+    position: relative;
+   overflow: hidden;
+}
+.aboutbreadcrumb{
+    background-image:linear-gradient(rgba(0, 87, 248, 0.7), rgba(0, 87, 248, 0.7)), url('/images/about.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 250px;
+    position: relative;
+   overflow: hidden;
+}
+.aboutimg{
+    width: 100px;
+    height: 100px;
+}
+.privateDuty{
+    position: relative;
+    top: 30px;
+}
+.whatButton{
+    display: none;
+}
+.whatudo:hover .whatButton{
+    display: block;
+}
+.whatudo:hover .privateDuty{
+    top: 0px;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: rgb(35, 35, 35);
+        transition: color 0.3s;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger.active .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.active .line2 {
+        opacity: 0;
+    }
+
+    .burger.active .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
